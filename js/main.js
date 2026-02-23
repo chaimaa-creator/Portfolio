@@ -1,5 +1,4 @@
 // ========================================
-// main.js – Portfolio Omar Guennouni – VERSION FINALE
 // ========================================
 
 document.addEventListener("DOMContentLoaded", function () {
@@ -100,8 +99,8 @@ document.addEventListener("DOMContentLoaded", function () {
     cvButton.addEventListener('click', function (e) {
       e.preventDefault();
 
-      const pdfPath = "files/CV_Omar_Guennouni.pdf";  // Chemin exact
-      const fileName = "CV_Omar_Guennouni.pdf";
+      const pdfPath = "files/cv_DataScientist__fr_.pdf";  // Chemin exact
+      const fileName = "cv_DataScientist__fr_.pdf";
 
       // Méthode ultra-fiable avec fetch + blob
       fetch(pdfPath)
@@ -150,7 +149,7 @@ document.addEventListener("DOMContentLoaded", function () {
           contactForm.reset();
         })
         .catch(() => {
-          alert("Erreur d'envoi. Écris-moi directement : omar.guennouni@outlook.fr");
+          alert("Erreur d'envoi. Écris-moi directement : bouaoudachamchouma@gmail.com");
         })
         .finally(() => {
           btn.textContent = original;
