@@ -1,0 +1,382 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portfolio - Chaimaa Bouaouda</title>
+
+  <!-- Google Font: Inter (moderne & lisible) -->
+  <link href="https://rsms.me/inter/inter.css" rel="stylesheet">
+
+  <!-- Font Awesome (icônes partout) -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+  <!-- Ton CSS amélioré -->
+  <link rel="stylesheet" href="styles/styles.css">
+
+  <!-- EmailJS pour le formulaire -->
+  <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+</head>
+<body>
+
+  <!-- HEADER -->
+  <header class="header">
+<nav class="navbar container">
+  <h1 class="logo">Chaimaa<span> Bouaouda</span></h1>
+
+  <!-- MENU BURGER -->
+  <button class="menu-toggle" id="menuToggle">
+    <i class="fas fa-bars"></i>
+  </button>
+
+  <ul class="nav-links" id="navLinks">
+    <li><a href="#hero">Accueil</a></li>
+    <li><a href="#about">À propos</a></li>
+    <li><a href="#skills">Compétences</a></li>
+    <li><a href="#experience">Expériences</a></li>
+    <li><a href="#projects">Projets</a></li>
+    <li><a href="#contact">Contact</a></li>
+  </ul>
+
+  <div class="header-right">
+    <div class="lang-switch">
+      <button id="lang-fr" class="active">FR</button>
+      <button id="lang-en">EN</button>
+    </div>
+    <button class="theme-toggle" id="themeToggle"><i class="fas fa-moon"></i></button>
+  </div>
+</nav>
+  </header>
+
+  <!-- HERO -->
+  <section id="hero" class="hero container fade-in">
+    <div class="hero-content">
+      <h2 class="hero-title"> Data Scientist & BI</h2>
+      <p class="hero-subtitle">
+        Animée par la technologie et l’analyse, je développe des systèmes intelligents mêlant <strong>algorithmes avancés, IA, data analytics et BI</strong>, du prototype à la mise en production, pour produire des gains concrets et mesurables.
+      </p>
+
+      <div class="hero-info">
+        <p><i class="fas fa-map-pin"></i> Nancy, France</p>
+        <p><i class="fab fa-linkedin"></i> 
+          <a href="https://www.linkedin.com/in/chaimaa-bouaouda/" target="_blank">Mon LinkedIn</a>
+        </p>
+        <p><i class="fas fa-globe"></i> 3 Langues (Français, Anglais, Arabe)</p>
+        <p><i class="fas fa-graduation-cap"></i> Douple Diplômée de l´école d'ingénieurs INSEA et l'université de lorraine </p>
+      </div>
+
+      <p class="hero-mission">
+        Désireuse de renforcer mon expertise technique, je souhaite évoluer dans un environnement innovant et participer au développement de projets stratégiques à forte valeur ajoutée.
+      </p>
+
+      <!-- BOUTONS ULTRA JOLIS -->
+      <div class="hero-buttons">
+        <a href="#projects" class="btn btn-secondary">
+          <i class="fas fa-arrow-down"></i> Voir mes projets
+        <a href="files/cv_DataScientist__fr_.pdf" 
+          class="btn btn-primary" 
+          id="downloadCV">
+          Télécharger mon CV
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ABOUT -->
+  <section id="about" class="about container fade-in">
+    <h2>À propos</h2>
+    <p>
+      Jeune diplômée de l’<strong>INSEA</strong> et de l’<strong>Université de Lorraine</strong>, spécialisée en <strong>Data Science</strong>, <strong>Intelligence Artificielle</strong> et <strong>Recherche Opérationnelle</strong>.<br>
+      Passionnée par le <strong>Machine Learning</strong>, le <strong>NLP</strong>, l’<strong>optimisation</strong> et l’<strong>analyse décisionnelle</strong>, je souhaite mettre mes compétences en <strong>modélisation statistique</strong>, <strong>développement d’algorithmes</strong>, <strong>analyse de données</strong> et <strong>Business Intelligence</strong> au service de projets innovants à fort impact.
+    </p>
+  </section>
+
+  <!-- SKILLS -->
+  <section id="skills" class="skills container fade-in">
+    <h2>Compétences</h2>
+    <div class="skill-grid">
+      <div class="skill-bar" title="C / C++ - 70%">
+        <p>C / C++</p>
+        <div class="bar"><div class="progress" data-width="70%"></div></div>
+      </div>
+      <div class="skill-bar" title="Python - 85%">
+        <p>Python</p>
+        <div class="bar"><div class="progress" data-width="85%"></div></div>
+      </div>
+      <div class="skill-bar" title="VBA - 80%">
+        <p>VBA</p>
+        <div class="bar"><div class="progress" data-width="80%"></div></div>
+      </div>
+      <div class="skill-bar" title="R - 75%">
+        <p>R</p>
+        <div class="bar"><div class="progress" data-width="75%"></div></div>
+      </div>
+      <div class="skill-bar" title="Java - 70%">
+        <p>Java</p>
+        <div class="bar"><div class="progress" data-width="70%"></div></div>
+      </div>
+      <div class="skill-bar" title="Power BI - 97%">
+        <p>Power BI</p>
+        <div class="bar"><div class="progress" data-width="65%"></div></div>
+      </div>
+      <div class="skill-bar" title="Tableau- 80%">
+        <p>Tableau</p>
+        <div class="bar"><div class="progress" data-width="80%"></div></div>
+      </div>
+      <div class="skill-bar" title="SQL / Base de données - 70%">
+        <p>SQL / Base de données</p>
+        <div class="bar"><div class="progress" data-width="70%"></div></div>
+      </div>
+      <div class="skill-bar" title="MATLAB  - 65%">
+        <p>MATLAB </p>
+        <div class="bar"><div class="progress" data-width="65%"></div></div>
+      </div>
+      <div class="skill-bar" title="Machine Learning  - 95%">
+        <p>Machine Learning </p>
+        <div class="bar"><div class="progress" data-width="95%"></div></div>
+      </div>
+       <div class="skill-bar" title="Deep Learning  - 90%">
+        <p>Deep Learning </p>
+        <div class="bar"><div class="progress" data-width="90%"></div></div>
+      </div>     
+      
+    </div>
+  </section>
+
+  <!-- EXPERIENCE -->
+  <section id="experience" class="experience container fade-in">
+    <h2>Expériences Professionnelles</h2>
+
+    <!-- Stage Framatome -->
+    <div class="experience-item">
+      <div class="experience-header">
+        <img src="img/inria.png" alt="Framatome Logo" class="experience-logo">
+        <div class="experience-title">
+          <h3>Data Scientist (R&D) – Inria, Nancy</h3>
+          <span class="date">Mai 2025 - Septembre 2025</span>
+        </div>
+        <button class="toggle-details">+</button>
+      </div>
+      <div class="experience-details">
+        <p>Développement d’une solution d’optimisation de la recharge de véhicules électriques en environnement dynamique via apprentissage par renforcement (RL), dans un contexte de recherche en optimisation énergétique.</p>
+        <ul>
+          <li>Modélisation du problème sous forme de processus de décision markovien (MDP) avec contraintes de puissance et de coût énergétique.</li>
+          <li>Conception et développement d’un environnement de simulation compatible OpenAI Gym.</li>
+          <li>Implémentation et évaluation d’algorithmes de Reinforcement Learning en Python.</li>
+          <li>Analyse des performances et comparaison avec des stratégies heuristiques.</li>
+          <li><strong>Technologies :</strong> Python, NumPy, Pandas, OpenAI Gym, Reinforcement Learning, Simulation, Git.</li>
+        </ul>
+      </div>
+    </div>
+
+
+    <!-- Stage UrbanLoop -->
+    <div class="experience-item">
+      <div class="experience-header">
+        <img src="img/awb_logo.png" alt="UrbanLoop Logo" class="experience-logo">
+        <div class="experience-title">
+          <h3>Data Scientist / BI – Attijari Wafa Bank, Casablanca</h3>
+          <span class="date">Févr. 2024 – Août 2024</span>
+        </div>
+        <button class="toggle-details">+</button>
+      </div>
+      <div class="experience-details">
+      <p>Contribution à l’optimisation du processus de paiement afin de réduire les retards fournisseurs et améliorer la performance opérationnelle.</p>
+      <ul>
+        <li>Analyse exploratoire des données financières et identification des facteurs clés influençant les délais de paiement.</li>
+        <li>Développement de modèles de <strong>Machine Learning</strong> sous Python pour prédire les retards de paiement.</li>
+        <li>Segmentation des fournisseurs via <strong>clustering</strong> (K-Means, Classification Hiérarchique) selon leur impact sur les délais.</li>
+        <li>Application d’une méthode d’<strong>analyse multicritère (TOPSIS)</strong> pour optimiser la prise de décision.</li>
+        <li>Conception de <strong>tableaux de bord interactifs sous Power BI</strong> et mise en place de cartes de contrôle pour le suivi des KPI et la détection d’anomalies.</li>
+        <li><strong>Technologies :</strong> Python, Pandas, Scikit-Learn, Power BI, SQL, Analyse statistique, Clustering.</li>
+      </ul>
+      </div>
+    </div>
+
+    <!-- Stage Attijariwafa Bank -->
+    <div class="experience-item">
+      <div class="experience-header">
+        <img src="img/douane_logo.webp" alt="AWB Logo" class="experience-logo">
+        <div class="experience-title">
+          <h3>Stage Data Scientist – Douane, Rabat</h3>
+          <span class="date">Juillet 2023 - Septembre 2023</span>
+        </div>
+        <button class="toggle-details">+</button>
+      </div>
+      <div class="experience-details">
+        <p>Automatisation et amélioration du processus de classification des marchandises afin d’optimiser le traitement douanier et la fiabilité des données.</p>
+        <ul>
+          <li>Nettoyage, normalisation et prétraitement de descriptions textuelles de produits (data cleaning, standardisation, gestion des valeurs manquantes).</li>
+          <li>Développement de modèles de <strong>NLP</strong> pour la classification automatique des marchandises.</li>
+          <li>Implémentation et comparaison de modèles de <strong>Machine Learning</strong> et <strong>Deep Learning</strong> (BERT, LLM).</li>
+          <li>Amélioration de la précision de classification grâce au fine-tuning de modèles pré-entraînés.</li>
+          <li><strong>Technologies :</strong> Python, NLP, Scikit-Learn, BERT, LLM, OpenAI API, Pandas.</li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- Radeej -->
+    <div class="experience-item">
+      <div class="experience-header">
+        <img src="img/radeej_ogo.png" alt="LB" class="experience-logo">
+        <div class="experience-title">
+          <h3>Stage Data analyst</h3>
+          <span class="date">Juillet 2022 - Aout 2021</span>
+        </div>
+        <button class="toggle-details">+</button>
+      </div>
+      <div class="experience-details">
+      <p>Analyse des données de consommation d’eau et d’électricité afin d’améliorer le suivi des performances et d’optimiser la prise de décision opérationnelle.</p>
+      <ul>
+        <li>Collecte, nettoyage et structuration des données de consommation clients.</li>
+        <li>Analyse exploratoire des données pour identifier les tendances, pics de consommation et anomalies.</li>
+        <li>Création d’indicateurs clés de performance (KPI) pour le suivi des volumes distribués et des écarts de consommation.</li>
+        <li>Développement de tableaux de bord interactifs pour le reporting mensuel.</li>
+        <li>Contribution à la détection d’anomalies pouvant indiquer des fuites ou irrégularités.</li>
+        <li><strong>Technologies :</strong> Excel, SQL, Python (Pandas, Matplotlib), Power BI.</li>
+      </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- PROJECTS -->
+  <section id="projects" class="projects container fade-in">
+    <h2>Projets </h2>
+    <div class="projects-grid">
+
+ <!-- Projet STOCK’IN – VERSION CORRIGÉE -->
+<div class="project-card" 
+     data-title="STOCK’IN — Gestion intelligente des stocks périssables"
+     data-desc="Application web full-stack en cours de développement : CRUD, alertes automatiques de péremption, recommandations de liquidation (règles + IA légère), tableau de bord analytique en temps réel avec graphiques interactifs."
+     data-img="img/stockin.jpg" 
+     data-github="https://gitlab.com/OmarGue/stock-in.git" 
+     data-demo="">
+  <img src="img/stockin.jpg" alt="STOCK’IN – Gestion des stocks périssables">
+  <div class="project-info">
+    <h3>
+      STOCK’IN 
+      <span class="badge-wip">En cours</span>
+    </h3>Gestion intelligente des stocks périssables avec alertes & IA prédictive</h3>
+    <div class="tags"> React • Node.js • MongoDB • Chart.js • IA légère
+    </div>
+  </div>
+</div>
+
+      <!-- Projet 1 -->
+      <div class="project-card" 
+           data-title="Contrôle neuromorphique"
+           data-desc="Conception d’un contrôleur inspiré des réseaux de neurones biologiques pour stabiliser un pendule inversé. Développement d’algorithmes adaptatifs et simulations réalisées avec Python et Matlab/Simulink. Rapport PDF disponible en Démo."
+           data-img="img/neurons.png" 
+           data-github="https://github.com/OmarGue/neuromorphic-pendulum" 
+           data-demo="files/PRDA_OG (2).pdf">
+        <img src="img/neurons.png" alt="Contrôle neuromorphique">
+        <div class="project-info">
+          <h3>Contrôle neuromorphique</h3>
+          <span class="tags">Python • Matlab/Simulink • Contrôle adaptatif</span>
+        </div>
+      </div>
+
+      <!-- Projet 2 -->
+      <div class="project-card" 
+           data-title="Simulation de vol multi-drones" 
+           data-desc="Simulateur multi-drones en C sous Linux. Évite obstacles et collisions. Modes local et distribué. Démo vidéo incluse." 
+           data-img="img/drone-sim.png" 
+           data-github="https://github.com/OmarGue/drone-sim" 
+           data-demo="img/drone-demo.mp4">
+        <img src="img/drone-sim.png" alt="Simulation de vol multi-drones">
+        <div class="project-info">
+          <h3>Simulation de vol multi-drones</h3>
+          <span class="tags">C • Linux • Réseau • Concurrence</span>
+        </div>
+      </div>
+
+      <!-- Projet AMIO -->
+      <div class="project-card" 
+           data-title="AMIO – Surveillance IoT de la lumière" 
+           data-desc="Application Android pour monitorer les capteurs de lumière via web service IoT Lab. Détection de changements brusques (&gt;80%), alertes par notifications et emails, vibration sur nouveau capteur, paramètres persistants et démarrage automatique. Rapport PDF en démo." 
+           data-img="img/amio.png" 
+           data-github="" 
+           data-demo="files/Doc_Projet_AMIO.pdf">
+        <img src="img/amio.png" alt="AMIO – Surveillance IoT de la lumière">
+        <div class="project-info">
+          <h3>AMIO – Surveillance IoT de la lumière</h3>
+          <span class="tags">Android • Java • IoT • Réseaux Embarqués</span>
+        </div>
+      </div>
+
+      <!-- Projet 4 -->
+      <div class="project-card" 
+           data-title="Robot autonome LEGO EV3" 
+           data-desc="Robot LEGO EV3 autonome avec algorithme TSP, régulation, interface graphique. Démo vidéo incluse." 
+           data-img="img/sami-robot.png" 
+           data-github="https://github.com/OmarGue/Autonomous-robot.git" 
+           data-demo="https://drive.google.com/drive/folders/1p2Iq5MRJHFO_w16-fKlPGcbzElciJZo5">
+        <img src="img/sami-robot.png" alt="Robot autonome LEGO EV3">
+        <div class="project-info">
+          <h3>Robot autonome LEGO EV3</h3>
+          <span class="tags">LEGO EV3 • Matlab • Python • TSP</span>
+        </div>
+      </div>
+
+      <!-- Projet 5 -->
+      <div class="project-card" 
+           data-title="Jeu Labyrinthe Java" 
+           data-desc="Jeu 2D en Java avec monstres, collisions, Maven, JUnit et Git." 
+           data-img="img/maze-game.png" 
+           data-github="https://github.com/OmarGue/MazeGame"
+           data-demo="img/mazegame_demo.mp4">
+        <img src="img/maze-game.png" alt="Jeu Labyrinthe Java">
+        <div class="project-info">
+          <h3>Jeu Labyrinthe – Aventure en Java</h3>
+          <span class="tags">Java • JUnit • Maven • Git</span>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section id="contact" class="contact container fade-in">
+    <h2>Contactez-moi</h2>
+    <p class="contact-intro">Intéressé par mon profil ? N'hésitez pas à m'envoyer un message :</p>
+
+    <form id="contact-form" class="contact-form">
+      <input type="text" name="name" placeholder="Votre nom" required>
+      <input type="email" name="email" placeholder="Votre email" required>
+      <textarea name="message" placeholder="Votre message..." required></textarea>
+      <button type="submit" class="btn btn-primary">Envoyer</button>
+    </form>
+
+    <div class="socials">
+      <a href="https://www.linkedin.com/in/omar-guennouni-ensemisn/" target="_blank" class="social-link">
+        <i class="fab fa-linkedin"></i>
+      </a>
+      <a href="https://github.com/OmarGue" target="_blank" class="social-link">
+        <i class="fab fa-github"></i>
+      </a>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <p>© 2025 Chaimaa Bouaouda | Développé avec <i class="fas fa-heart"></i></p>
+  </footer>
+
+  <!-- MODAL PROJETS -->
+  <div id="projectModal" class="modal">
+    <div class="modal-content">
+      <span class="close-modal">&times;</span>
+      <img id="modalImg" src="" alt="">
+      <h3 id="modalTitle"></h3>
+      <p id="modalDesc"></p>
+      <div class="modal-links">
+        <a id="modalGithub" href="#" target="_blank" class="btn btn-secondary">Code</a>
+        <a id="modalDemo" href="#" target="_blank" class="btn btn-primary">Démo</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- Ton JS -->
+  <script src="js/main.js"></script>
+</body>
+</html>
